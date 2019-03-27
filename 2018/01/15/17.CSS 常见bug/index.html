@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>CSS 常见bug | </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="hero,华英雄,何华雄" />
+  
+  <meta name="description" content="CSS 常见bug1.IE6及更早浏览器浮动时产生双倍边距的BUG所谓的IE6双倍边距就是指当元素有float属性，又有margin属性时，在IE6下面显示的margin的值是设置值的两倍。这个是IE6比较著名的BUG。 解决的方法就是_display:inline。 2.IE6元素最小高度的问题在IE6下面，如果想给把元素设置成19像素以下的高度是设置不了的。这是因为IE6浏览器里面有个默认的高">
+<meta name="keywords" content="CSS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS 常见bug">
+<meta property="og:url" content="https://yoursite.com/2018/01/15/17.CSS 常见bug/index.html">
+<meta property="og:site_name">
+<meta property="og:description" content="CSS 常见bug1.IE6及更早浏览器浮动时产生双倍边距的BUG所谓的IE6双倍边距就是指当元素有float属性，又有margin属性时，在IE6下面显示的margin的值是设置值的两倍。这个是IE6比较著名的BUG。 解决的方法就是_display:inline。 2.IE6元素最小高度的问题在IE6下面，如果想给把元素设置成19像素以下的高度是设置不了的。这是因为IE6浏览器里面有个默认的高">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-02-20T08:25:32.588Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS 常见bug">
+<meta name="twitter:description" content="CSS 常见bug1.IE6及更早浏览器浮动时产生双倍边距的BUG所谓的IE6双倍边距就是指当元素有float属性，又有margin属性时，在IE6下面显示的margin的值是设置值的两倍。这个是IE6比较著名的BUG。 解决的方法就是_display:inline。 2.IE6元素最小高度的问题在IE6下面，如果想给把元素设置成19像素以下的高度是设置不了的。这是因为IE6浏览器里面有个默认的高">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">Hello World</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/">
+                        <i class="fa fa-home"></i>
+                        <span>首页</span>
+                    </a>
+                    
+                    <a  href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>档案</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/hero.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        Hello World
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        一个专注 WEB 开发的技术博客
+                    </h3>
+                    
+                </div>
+            </div>
+            <!-- 
+                舍弃 中间的分享
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="MinHow" target="_blank" href="//minhow.com">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/wongminho">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="//weibo.com/WongMinHo">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="Twitter" target="_blank" href="//twitter.com/huangminhow">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav> 
+			-->
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-17.CSS 常见bug" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      CSS 常见bug
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/CSS/">CSS</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2018-01-15
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <h3 id="CSS-常见bug"><a href="#CSS-常见bug" class="headerlink" title="CSS 常见bug"></a>CSS 常见bug</h3><h4 id="1-IE6及更早浏览器浮动时产生双倍边距的BUG"><a href="#1-IE6及更早浏览器浮动时产生双倍边距的BUG" class="headerlink" title="1.IE6及更早浏览器浮动时产生双倍边距的BUG"></a>1.IE6及更早浏览器浮动时产生双倍边距的BUG</h4><p>所谓的IE6双倍边距就是指当元素有float属性，又有margin属性时，在IE6下面显示的margin的值是设置值的两倍。这个是IE6比较著名的BUG。 解决的方法就是_display:inline。</p>
+<h4 id="2-IE6元素最小高度的问题"><a href="#2-IE6元素最小高度的问题" class="headerlink" title="2.IE6元素最小高度的问题"></a>2.IE6元素最小高度的问题</h4><p>在IE6下面，如果想给把元素设置成19像素以下的高度是设置不了的。这是因为IE6浏览器里面有个默认的高度， iE6下这个问题是因为默认的行高造成的,解决方法是给元素加    overflow:hidden;   就可以了。</p>
+<h4 id="3-IE7及更早浏览器下当li中出现2个或以上的浮动时，li之间产生的空白间隙的BUG？"><a href="#3-IE7及更早浏览器下当li中出现2个或以上的浮动时，li之间产生的空白间隙的BUG？" class="headerlink" title="3.IE7及更早浏览器下当li中出现2个或以上的浮动时，li之间产生的空白间隙的BUG？"></a>3.IE7及更早浏览器下当li中出现2个或以上的浮动时，li之间产生的空白间隙的BUG？</h4><p>vertical-align:top;<br>除了top值，还可以设置为 middle | bottom 等都可以</p>
+<h4 id="4-IE6中奇数宽高的BUG"><a href="#4-IE6中奇数宽高的BUG" class="headerlink" title="4.IE6中奇数宽高的BUG"></a>4.IE6中奇数宽高的BUG</h4><p>IE6还有奇数宽高的bug，解决方案就是将外部相对定位的div宽度改成偶数。<br>反正不要用基数就行了。</p>
+<h4 id="5-了解ie6盒子会撑高的特性"><a href="#5-了解ie6盒子会撑高的特性" class="headerlink" title="5.了解ie6盒子会撑高的特性"></a>5.了解ie6盒子会撑高的特性</h4><p>ie下面的盒子， 即使你给与了宽度和高度，但是内容超过盒子大小的时候，盒子仍然会被撑大，解决方法就是添加   overflow:hidden;</p>
+
+            <!-- <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2019年02月20日 16:25</p>
+        <p>原始链接： <a class="post-url" href="/2018/01/15/17.CSS 常见bug/" title="CSS 常见bug">https://yoursite.com/2018/01/15/17.CSS 常见bug/</a></p>
+        <footer>
+            <a href="https://yoursite.com">
+                <img src="/images/hero.png" alt="hero">
+                hero
+            </a>
+        </footer>
+    </div>
+</div> -->
+
+      
+        
+            
+<!-- <div class="page-reward">
+    <a id="rewardBtn" href="javascript:;">赏</a>
+</div> -->
+
+<div id="reward" class="post-modal reward-lay">
+    <a class="close" href="javascript:;" id="reward-close">×</a>
+    <span class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        请我吃糖~
+        <i class="icon icon-quote-right"></i>
+    </span>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/images/wechat_code.jpg" alt="打赏二维码">
+        </div>
+        <div class="reward-select">
+            
+            <label class="reward-select-item checked" data-id="wechat" data-wechat="/images/wechat_code.jpg">
+                <img class="reward-select-item-wechat" src="/images/wechat.png" alt="微信">
+            </label>
+            
+            
+            <label class="reward-select-item" data-id="alipay" data-alipay="/images/alipay_code.jpg">
+                <img class="reward-select-item-alipay" src="/images/alipay.png" alt="支付宝">
+            </label>
+            
+        </div>
+    </div>
+</div>
+
+
+        
+    </div>
+    <footer class="article-footer">
+        
+        
+<!-- <div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://yoursite.com/2018/01/15/17.CSS 常见bug/&title=《CSS 常见bug》 — null&pic=https://yoursite.comimages/hero.png" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://yoursite.com/2018/01/15/17.CSS 常见bug/&title=《CSS 常见bug》 — null&source=" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://yoursite.com/2018/01/15/17.CSS 常见bug/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《CSS 常见bug》 — null&url=https://yoursite.com/2018/01/15/17.CSS 常见bug/&via=https://yoursite.com" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://yoursite.com/2018/01/15/17.CSS 常见bug/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://yoursite.com/2018/01/15/17.CSS 常见bug/" alt="微信分享二维码">
+</div> -->
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/CSS/" class="color4">CSS</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#CSS-常见bug"><span class="post-toc-text">CSS 常见bug</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-IE6及更早浏览器浮动时产生双倍边距的BUG"><span class="post-toc-text">1.IE6及更早浏览器浮动时产生双倍边距的BUG</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-IE6元素最小高度的问题"><span class="post-toc-text">2.IE6元素最小高度的问题</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-IE7及更早浏览器下当li中出现2个或以上的浮动时，li之间产生的空白间隙的BUG？"><span class="post-toc-text">3.IE7及更早浏览器下当li中出现2个或以上的浮动时，li之间产生的空白间隙的BUG？</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#4-IE6中奇数宽高的BUG"><span class="post-toc-text">4.IE6中奇数宽高的BUG</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#5-了解ie6盒子会撑高的特性"><span class="post-toc-text">5.了解ie6盒子会撑高的特性</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+    <a href="/2018/01/15/19.网站优化三大标签description keywords title/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          网站优化三大标签 description keywords title
+        
+      </span>
+    </a>
+  
+  
+    <a href="/2018/01/15/23.outline CSS轮廓/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">outline CSS轮廓</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2019 hero<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "https://yoursite.com",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 1
+  }
+</script>
+<div class="sidebar">
+    <!-- 搜索功能  不要 -->
+    <!-- <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div> -->
+    <div id="sidebar-category" title="分类">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="标签">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            <a class="category-link" href="/categories/CSS/">CSS</a><a class="category-link" href="/categories/CSS3/">CSS3</a><a class="category-link" href="/categories/HTML5/">HTML5</a><a class="category-link" href="/categories/HTML5-JS/">HTML5 JS</a>
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="/tags/CSS/" style="font-size: 20px;">CSS</a> <a href="/tags/CSS3/" style="font-size: 13.33px;">CSS3</a> <a href="/tags/HTML5/" style="font-size: 16.67px;">HTML5</a> <a href="/tags/HTML5-JS/" style="font-size: 10px;">HTML5 JS</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-home"></i><span>首页</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/archives">
+                    <i class="fa fa-archive"></i><span>档案</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            <a href="/tags/CSS/" style="font-size: 20px;">CSS</a> <a href="/tags/CSS3/" style="font-size: 13.33px;">CSS3</a> <a href="/tags/HTML5/" style="font-size: 16.67px;">HTML5</a> <a href="/tags/HTML5-JS/" style="font-size: 10px;">HTML5 JS</a>
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
+</body>
+</html>
